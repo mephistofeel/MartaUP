@@ -1,0 +1,16 @@
+@mixin flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+@mixin list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin link {
+  color: inherit;
+  text-decoration: none;
+}
