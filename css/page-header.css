@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'list'.
-        on line 33 of C:\Users\Balian\Documents\GitHub\MartaUP\sass\page-header.scss, in `list'
-        from line 33 of C:\Users\Balian\Documents\GitHub\MartaUP\sass\page-header.scss
+        on line 34 of C:\Users\Balian\Documents\GitHub\MartaUP\sass\page-header.scss, in `list'
+        from line 34 of C:\Users\Balian\Documents\GitHub\MartaUP\sass\page-header.scss
 
-28:   display: flex;
-29: }
-30: 
-31: .main-nav__list {
-32:   display: flex;
-33:   @include list;
-34: 
-35:   &--main {
-36:     margin-right: 199px;
-37:     padding-top: 38px;
-38:   }
+29:   display: flex;
+30: }
+31: 
+32: .main-nav__list {
+33:   display: flex;
+34:   @include list;
+35: 
+36:   &--main {
+37:     margin-right: 199px;
+38:     padding-top: 38px;
+39:   }
 
 Backtrace:
-C:\Users\Balian\Documents\GitHub\MartaUP\sass\page-header.scss:33:in `list'
-C:\Users\Balian\Documents\GitHub\MartaUP\sass\page-header.scss:33
+C:\Users\Balian\Documents\GitHub\MartaUP\sass\page-header.scss:34:in `list'
+C:\Users\Balian\Documents\GitHub\MartaUP\sass\page-header.scss:34
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -65,4 +65,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'list'.\A         on line 33 of C:\Users\Balian\Documents\GitHub\MartaUP\sass\page-header.scss, in `list'\A         from line 33 of C:\Users\Balian\Documents\GitHub\MartaUP\sass\page-header.scss\A \A 28:   display: flex;\A 29: }\A 30: \A 31: .main-nav__list {\A 32:   display: flex;\A 33:   @include list;\A 34: \A 35:   &--main {\A 36:     margin-right: 199px;\A 37:     padding-top: 38px;\A 38:   }"; }
+  content: "Error: Undefined mixin 'list'.\A         on line 34 of C:\Users\Balian\Documents\GitHub\MartaUP\sass\page-header.scss, in `list'\A         from line 34 of C:\Users\Balian\Documents\GitHub\MartaUP\sass\page-header.scss\A \A 29:   display: flex;\A 30: }\A 31: \A 32: .main-nav__list {\A 33:   display: flex;\A 34:   @include list;\A 35: \A 36:   &--main {\A 37:     margin-right: 199px;\A 38:     padding-top: 38px;\A 39:   }"; }

@@ -18,6 +18,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 141px;
 }
 
 .page-header__logo {
@@ -84,13 +85,6 @@
   transition: all 0.7s;
 }
 
-.header-slider {
-  margin-top: 141px;
-}
-
-.header-slider__item {
-}
-
 .header-slider__content {
   display: flex;
   justify-content: space-between;
@@ -129,4 +123,40 @@
 
 .header-slider__item-image {
   margin-top: 22px;
+  margin-right: 63px;
+}
+
+.header-slider__dots {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  
+  width: 15px;
+  @include list;
+}
+
+.header-slider__dots button {
+  display: block;
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 10px;
+
+  font-size: 0;
+
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+
+  cursor: pointer;
+}
+
+.header-slider__dots .slick-active button {
+  width: 15px;
+  height: 7px;
+
+  border-radius: 3.5px;
+  background-color: #ffffff;
 }
