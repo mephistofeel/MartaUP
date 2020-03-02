@@ -1,0 +1,44 @@
+.page-footer {
+  padding-top: 20px;
+  padding-bottom: 18px;
+}
+
+.page-footer__inner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.page-footer__navigation-list {
+  display: flex;
+  max-width: 389px;
+  @include list;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.page-footer__navigation-item {
+  margin-right: 30px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.page-footer__navigation-item a {
+  @include link;
+
+  &:hover {
+   color: #548eaa;
+  }
+}
+
+.page-footer__copyright {
+  @include reset;
+  padding-right: 10px;
+
+  text-align: center;
+  
+}
