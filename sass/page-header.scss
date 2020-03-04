@@ -28,6 +28,10 @@
   fill: #FFCA00;
 }
 
+.page-header__user-icon {
+  display: none;
+}
+
 .page-header__toggle {
   display: none;
 }
@@ -203,6 +207,61 @@
     padding-bottom: 25px;
   }
 
+  .page-header__user-icon {
+    position: absolute;
+    right: 100px;
+
+    display: block;
+    width: 45px;
+    height: 24px;
+    padding: 0;
+
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+  }
+
+  .page-header__user-stick {
+    font-size: 4.5px;
+    border: .5em solid #ffffff;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      border: .5em solid #ffffff;
+      width: 7em;
+      height: 7em;
+      border-radius: 50%;
+      bottom: -3em;
+      left: 50%;
+      margin-left: -3.5em;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 4em;
+      height: 4em;
+      border: .5em solid #ffffff; 
+      border-radius: 50%;
+      top: 1.5em;
+      left: 50%;
+      margin-left: -2em;
+    }
+
+  }
+
   .page-header__toggle {
     position: absolute;
     right: 20px;
@@ -263,6 +322,8 @@
     text-align: center;
 
     background-color: #195dae;
+
+    z-index: 100;
   }
 
   .main-nav__item {
@@ -286,7 +347,7 @@
 
   .page-header__user-list {
     position: absolute;
-    top: 325px;
+    top: 101px;
     left: 0;
 
     display: none;
@@ -324,11 +385,45 @@
 
   }
 
+  .page-header__login-logo {
+    width: 50px;
+    height: 50px;
+  }
+
   .page-header__user-item a {
     display: block;
     padding: 15px 0;
 
     border-top: 1px solid rgba(255, 255, 255, 0.20);
+  }
+}
+
+@media (max-width: 400px) {
+
+  .page-header__user-icon {
+    right: 80px;
+
+    width: 35px;
+  }
+
+  .page-header__user-stick {
+    font-size: 3px;
+  }
+
+  .page-header__toggle {
+    width: 40px;
+  }
+
+  .page-header__toggle-stick {
+    width: 40px;
+
+    &::before {
+      width: 40px;
+    }
+
+    &::after {
+      width: 40px;
+    }
   }
 }
 
@@ -339,3 +434,4 @@
   }
 
 }
+

@@ -11,6 +11,9 @@ $(function(){
 
   $('.page-header__toggle').on('click', function(){
     $('.main-nav__list').slideToggle();
+  });
+
+  $('.page-header__user-icon').on('click', function(){
     $('.page-header__user-list').slideToggle();
   });
 
