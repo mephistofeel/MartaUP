@@ -2,11 +2,16 @@ $(function(){
 
   $('.header-slider').slick({
     arrows: false,
-    vertical: true,
     dots: true,
     dotsClass: 'header-slider__dots',
+    vertical: true,
     autoplay: true,
     autoplaySpeed: 4000
+  });
+
+  $('.page-header__toggle').on('click', function(){
+    $('.main-nav__list').slideToggle();
+    $('.page-header__user-list').slideToggle();
   });
 
 });
