@@ -24,6 +24,10 @@
   padding-top: 32px;
 }
 
+.page-header__logo {
+  cursor: pointer;
+}
+
 .page-header__logo:hover .logo__text {
   fill: #FFCA00;
 }
@@ -119,6 +123,10 @@
   }
 }
 
+.header-slider__item {
+  min-height: 400px;
+}
+
 .header-slider__content {
   display: flex;
   justify-content: space-between;
@@ -142,6 +150,7 @@
   margin-bottom: 65px;
 
   font-size: 24px;
+  line-height: 32px;
 }
 
 .header-slider__button {
@@ -156,8 +165,16 @@
 }
 
 .header-slider__item-image {
+  position: relative;
+
   margin-top: 22px;
   margin-right: 63px;
+}
+
+.header-slider__img-2 {
+  position: absolute;
+  top: -55px;
+  left: -480px;
 }
 
 .header-slider__dots {
