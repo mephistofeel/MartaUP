@@ -50,6 +50,10 @@
   margin-bottom: 11px;
 }
 
+.reviews__user-avatar {
+  border-radius: 50%;
+}
+
 .reviews__user-name {
   @include reset;
   margin-left: 20px;
@@ -89,4 +93,49 @@
     line-height: 55px;
     font-weight: 700;
   }
+  
+}
+
+@media (max-width: 959px) {
+
+ .reviews__list {
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .reviews__item {
+  
+   &:nth-of-type(2) {
+     margin-right: 0;
+   }
+
+   &:nth-of-type(3) {
+     margin-top: 40px;
+   }
+ }
+
+}
+
+@media (max-width: 659px) {
+
+  .reviews {
+    padding-bottom: 50px;
+  }
+
+  .reviews__item {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 40px;
+
+    &:nth-of-type(3) {
+      margin: 0;
+    }
+
+  }
+
+  .reviews__user-info {
+    justify-content: center;
+  }
+
 }

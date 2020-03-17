@@ -5,8 +5,13 @@ $(function(){
     dots: true,
     dotsClass: 'header-slider__dots',
     vertical: true,
-    autoplay: true,
-    autoplaySpeed: 4000
+    // autoplay: true,
+    // autoplaySpeed: 4000
+    // responsive: [
+    //   {
+    //     breakpoint: 
+    //   }
+    // ]
   });
 
   $('.page-header__toggle').on('click', function(){
