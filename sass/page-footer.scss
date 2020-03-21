@@ -1,6 +1,8 @@
 .page-footer {
   padding-top: 20px;
   padding-bottom: 18px;
+
+  background-color: #f8f8f8;
 }
 
 .page-footer__inner {
@@ -32,7 +34,7 @@
   @include link;
 
   &:hover {
-   color: #548eaa;
+   text-decoration: underline;
   }
 }
 
@@ -45,8 +47,8 @@
   display: block;
 
   &:hover {
-    color: #548eaa;
-   }
+    text-decoration: underline;
+  }
    
 }
 
