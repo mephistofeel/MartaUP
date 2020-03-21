@@ -712,7 +712,8 @@ a {
     background: none; } }
 @media (max-width: 900px) {
   .specialised {
-    padding-top: 45px; }
+    padding-top: 60px;
+    padding-bottom: 70px; }
 
   .specialised__title {
     margin-bottom: 65px; }
@@ -730,6 +731,9 @@ a {
     .specialised__item:last-of-type {
       margin-top: 60px; } }
 @media (max-width: 650px) {
+  .specialised {
+    padding-top: 50px; }
+
   .specialised__title {
     font-size: 32px;
     line-height: 40px; }
@@ -740,6 +744,9 @@ a {
     .specialised__item:first-of-type {
       margin-right: 0;
       margin-top: 0; } }
+@media (max-width: 450px) {
+  .specialised {
+    padding-top: 30px; } }
 @media (max-width: 332px) {
   .specialised__title {
     font-size: 30px; } }
@@ -864,6 +871,10 @@ a {
   .features__image {
     max-width: 420px; } }
 @media (max-width: 900px) {
+  .features {
+    padding-top: 45px;
+    padding-bottom: 70px; }
+
   .features__item--designers {
     margin-bottom: 90px; }
   .features__item--architect {
@@ -894,6 +905,9 @@ a {
   .features__image {
     max-width: 360px; } }
 @media (max-width: 800px) {
+  .features {
+    padding-top: 70px; }
+
   .features__item {
     flex-wrap: wrap;
     justify-content: center; }
@@ -923,11 +937,17 @@ a {
 
   .features__image img {
     height: 100%; } }
+@media (max-width: 518px) {
+  .features {
+    padding-top: 50px; } }
 @media (max-width: 450px) {
+  .features {
+    padding-bottom: 60px; }
+
   .features__info {
     margin-bottom: 45px; } }
 .reviews {
-  padding-top: 75px;
+  padding-top: 65px;
   padding-bottom: 150px;
   color: #ffffff;
   background-image: url("../img/reviews-bg.jpg");

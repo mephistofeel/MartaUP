@@ -13,6 +13,7 @@
 
 .page-footer__navigation-list {
   display: flex;
+  align-items: center;
   max-width: 389px;
   @include list;
   padding-left: 45px;
@@ -37,8 +38,46 @@
 
 .page-footer__copyright {
   @include reset;
-  padding-right: 10px;
+  padding-right: 10px; 
+}
 
-  text-align: center;
-  
+.page-footer__copyright-mail {
+  display: block;
+
+  &:hover {
+    color: #548eaa;
+   }
+   
+}
+
+@media (max-width: 750px) {
+
+  .page-footer__inner {
+    flex-wrap: wrap;
+  }
+
+  .page-footer__navigation-list {
+    margin-bottom: 20px;
+    padding-right: 0;
+    padding-left: 15px;
+  }
+
+  .page-footer__copyright {
+    width: 100%;
+    padding-left: 15px;
+
+    text-align: left;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .page-footer__navigation-list {
+    padding-left: 10px;
+  }
+
+  .page-footer__copyright {
+    padding-left: 10px;
+  }
+
 }
