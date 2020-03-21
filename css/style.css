@@ -973,8 +973,8 @@ a {
   .features__info {
     margin-bottom: 45px; } }
 .clients {
-  padding-top: 125px;
-  padding-bottom: 125px; }
+  padding-top: 100px;
+  padding-bottom: 100px; }
 
 .clients__inner {
   max-width: 1210px;
@@ -1000,10 +1000,6 @@ a {
   max-width: 100%;
   height: auto; }
 
-@media (max-width: 1250px) {
-  .clients {
-    padding-top: 100px;
-    padding-bottom: 100px; } }
 @media (max-width: 959px) {
   .clients {
     padding-top: 75px;
