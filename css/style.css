@@ -222,6 +222,8 @@ a {
   cursor: pointer; }
   .header-slider__dots button:hover {
     background-color: rgba(255, 255, 255, 0.7); }
+  .header-slider__dots button:focus {
+    outline: 0; }
 
 .header-slider__dots .slick-active button {
   width: 15px;
@@ -565,7 +567,7 @@ a {
     height: 250px; } }
 @media (max-width: 810px) {
   .page-header {
-    min-height: 570px; }
+    min-height: 600px; }
 
   .page-header__top {
     margin-bottom: 70px; }
@@ -586,15 +588,40 @@ a {
   .header-slider__info {
     max-width: 100%;
     width: 100%;
-    padding-right: 40px;
+    padding-right: 0;
     text-align: center; }
 
   .header-slider__item-title-3 {
     max-width: 100%;
-    width: 100%; } }
+    width: 100%; }
+
+  .header-slider__dots {
+    display: inline-flex;
+    top: 300px;
+    left: 0;
+    right: 0;
+    transform: none;
+    width: 150px;
+    height: 20px;
+    margin: 0 auto; }
+
+  .header-slider__dots button {
+    width: 14px;
+    height: 14px;
+    margin-bottom: 0;
+    margin-right: 20px; }
+
+  .header-slider__dots .slick-active button {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.85); } }
 @media (max-width: 650px) {
   .page-header {
-    min-height: 560px; }
+    min-height: 650px; }
+
+  .header-slider__dots {
+    top: 360px; }
 
   .page-header__top {
     margin-bottom: 40px; }
@@ -602,14 +629,8 @@ a {
   .header-slider__item {
     min-height: 320px; } }
 @media (max-width: 476px) {
-  .page-header {
-    min-height: 590px; }
-
   .page-header__top {
     margin-bottom: 40px; }
-
-  .header-slider__info {
-    padding-right: 30px; }
 
   .header-slider__item-title {
     margin-bottom: 15px;
@@ -640,7 +661,10 @@ a {
       width: 40px; } }
 @media (max-width: 380px) {
   .page-header {
-    min-height: 630px; }
+    min-height: 680px; }
+
+  .header-slider__dots {
+    top: 395px; }
 
   .page-header__top {
     margin-bottom: 50px; }
