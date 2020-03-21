@@ -199,6 +199,11 @@
 
 @media (max-width: 900px) {
 
+  .features {
+    padding-top: 45px;
+    padding-bottom: 70px;
+  }
+
   .features__item {
 
     &--designers{
@@ -253,6 +258,10 @@
 
 @media (max-width: 800px) {
 
+  .features {
+    padding-top: 70px;
+  }
+
   .features__item {
     flex-wrap: wrap;
     justify-content: center;
@@ -298,7 +307,19 @@
 
 }
 
+@media (max-width: 518px) {
+
+  .features {
+    padding-top: 50px;
+  }
+
+}  
+
 @media (max-width: 450px) {
+
+  .features {
+    padding-bottom: 60px;
+  }
 
   .features__info {
     margin-bottom: 45px;

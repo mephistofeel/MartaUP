@@ -70,8 +70,10 @@
 } 
 
 @media (max-width: 900px) {
+
   .specialised {
-    padding-top: 45px;
+    padding-top: 60px;
+    padding-bottom: 70px;
   }
 
   .specialised__title {
@@ -101,6 +103,10 @@
 
 @media (max-width: 650px) {
 
+  .specialised {
+    padding-top: 50px;
+  }
+
   .specialised__title {
     font-size: 32px;
     line-height: 40px;
@@ -113,6 +119,14 @@
       margin-right: 0;
       margin-top: 0;
     }
+  }
+
+}
+
+@media (max-width: 450px) {
+
+  .specialised {
+    padding-top: 30px;
   }
 
 }
