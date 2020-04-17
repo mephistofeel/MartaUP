@@ -1,4 +1,8 @@
+
+
 $(function(){
+
+  new WOW().init();
 
   $('.header-slider').slick({
     arrows: false,
@@ -6,7 +10,8 @@ $(function(){
     dotsClass: 'header-slider__dots',
     vertical: true,
     autoplay: true,
-    autoplaySpeed: 4000
+    autoplaySpeed: 8000,
+    lazyLoad: 'ondemand'
   });
 
   $('.reviews__list').slick({
@@ -17,6 +22,7 @@ $(function(){
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 10000,
+    lazyLoad: 'ondemand',
     responsive: [
       {
         breakpoint: 1100,
@@ -37,7 +43,8 @@ $(function(){
   });
 
   $('.page-header__toggle').on('click', function(){
-    $('.main-nav__list').slideToggle();
+    $('.main-nav__list').slideToggle(),
+    $(this).toggleClass("page-header__toggle--active");
   });
 
   $('.page-header__user-icon').on('click', function(){

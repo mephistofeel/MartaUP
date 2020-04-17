@@ -1,0 +1,62 @@
+.button {
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+
+  &:hover {
+    transition: all 0.4s;
+  }
+
+  &--sign-up {
+    display: block;
+    width: 143px;
+    padding: 8px 43px;
+
+    border-radius: 20px;
+  }
+
+  &--white {
+    color: $blue-gem;
+      
+    background-color: $white;
+
+    &:hover {
+      color: $white;
+
+      background-color: $blue-gem;
+    }
+  }
+
+  &--yellow {
+    color: $blue-gem;
+  
+    background-color: $supernova;
+
+    &:hover {
+      color: $white;
+    
+      background-color: $blue-gem;
+    }
+  }
+}
+
+@media (max-width: $desktop-max-width) {
+  .button {
+    &--sign-up {
+      width: 100%;
+      min-height: auto;
+      padding: 0;
+
+      color: #ffffff;
+  
+      border-radius: 0;
+      background-color: transparent;
+
+      &:hover {
+        color: $supernova;
+
+        background-color: transparent;
+      }
+    }
+  }
+}

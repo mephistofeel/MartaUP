@@ -1,0 +1,16 @@
+.logo {
+  cursor: pointer;
+ 
+}
+
+.logo:hover .logo__text {
+  fill: #FFCA00;
+
+  transition: all 0.5s;
+}
+
+@media (max-width: $desktop-max-width) {
+  .logo {
+    z-index: 10;
+  }
+}

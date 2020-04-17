@@ -2,20 +2,14 @@
   padding-top: 63px;
   padding-bottom: 55px;
    
-  background-color: #F4F9FD;
+  background-color: $polar;
   background-image: url("../img/features-bg.svg");
   background-repeat: no-repeat;
   background-position: right 800px;
 }
 
-.features__inner {
-  max-width: 1210px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 .features__list {
-  @include list;
+  @include list-reset;
 }
 
 .features__item {
@@ -29,7 +23,6 @@
   &--architect {
     margin-bottom: 23px;
   }
-
 }
 
 .features__item:nth-of-type(2n)  .features__info {
@@ -68,17 +61,13 @@
     background-size: 40%;
     background-position: 23px -2px;
   }
-
 }
 
 .features__info-title {
-  @include reset;
+  @include indent-reset;
   margin-bottom: 30px;
  
-  font-size: 35px;
-  line-height: 45px;
-  font-weight: 700;
-  color: #202020;
+  color: $font-color-base--lighten;
 
   &--designers {
     padding-right: 31px;
@@ -91,18 +80,16 @@
   &--generation {
     padding-right: 95px;
   }
-
 }
 
 .features__text {
-  @include reset;
+  @include indent-reset;
 
-  color: #272727;
+  color: $font-color-base;
 
   &:first-of-type:not(:only-of-type) {
     margin-bottom: 33px;
   }
-
 }
 
 @media (max-width: 1800px) {
@@ -110,7 +97,6 @@
   .features {
     background-image: none;
   }
-
 }
 
 @media (max-width: 1210px) {
@@ -128,7 +114,6 @@
   .features__item--architect {
     margin-bottom: 60px;
   }
-  
 }
 
 @media (max-width: 1110px) {
@@ -149,10 +134,8 @@
 
     &--architect{
       margin-bottom: 80px;
-    }
-    
+    } 
   }
-
 }
 
 @media (max-width: 1050px) {
@@ -168,7 +151,6 @@
   .features__image {
     max-width: 450px;
   }
-
 }
 
 @media (max-width: 1000px) {
@@ -176,10 +158,9 @@
   .features__image {
     max-width: 420px;
   }
-
 }
 
-@media (max-width: 959px) {
+@media (max-width: $desktop-max-width) {
 
   .features__info {
     max-width: 400px;
@@ -192,13 +173,11 @@
     &--generation {
       padding-right: 83px;
     }
-
   }
 
   .features__image {
     max-width: 420px;
   }
-
 }
 
 @media (max-width: 900px) {
@@ -216,7 +195,6 @@
     &--architect{
       margin-bottom: 80px;
     }
-    
   }
 
   .features__info {
@@ -227,14 +205,12 @@
 
     &--designers {
       background-position: 0 15px;
-      
     }
 
     &--generation {
       background-position: 13px 15px;
       background-size: 41%;
     }
-
   }
 
   .features__info-title {
@@ -250,7 +226,6 @@
   .features__image img {
     height: 90%;
   }
-
 }
 
 @media (max-width: 850px) {
@@ -278,7 +253,6 @@
       position: relative;
       left: 15px;
     }
-
   }
 
   .features__info {
@@ -307,7 +281,6 @@
   .features__image img {
     height: 100%;
   }
-
 }
 
 @media (max-width: 518px) {
@@ -315,7 +288,6 @@
   .features {
     padding-top: 50px;
   }
-
 }  
 
 @media (max-width: 450px) {
@@ -327,5 +299,4 @@
   .features__info {
     margin-bottom: 45px;
   }
-
 }

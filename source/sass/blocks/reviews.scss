@@ -2,23 +2,18 @@
   padding-top: 65px;
   padding-bottom: 150px;
 
-  color: #ffffff;
+  color: $white;
 
+  background-color: #006FB9;
   background-image: url("../img/reviews-bg.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
 }
 
-.reviews__inner {
-  max-width: 1210px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 .reviews__title {
   max-width: 383px;
-  @include reset;
+  @include indent-reset;
   margin: 0 auto;
   margin-bottom: 48px;
 
@@ -30,7 +25,7 @@
 
   display: flex;
   max-width: 940px;
-  @include list;
+  @include list-reset;
   margin: 0 auto;
 }
 
@@ -57,7 +52,6 @@
   &:focus {
     outline: 0;
   }
-
 }
 
 .slick-prev {
@@ -93,7 +87,7 @@
 }
 
 .reviews__user-name {
-  @include reset;
+  @include indent-reset;
   margin-left: 20px;
 
   font-weight: 600;
@@ -110,7 +104,7 @@
 .reviews__user-review {
   position: relative;
 
-  @include reset;
+  @include indent-reset;
   padding-top: 46px;
 
   text-align: center;
@@ -131,7 +125,6 @@
     line-height: 55px;
     font-weight: 700;
   }
-  
 }
 
 .slick-dots {
@@ -142,7 +135,7 @@
 
   display: inline-flex;
   justify-content: center;
-  @include list;
+  @include list-reset;
   margin: 0 auto;
   
   font-size: 0;
@@ -154,7 +147,6 @@
   &:last-of-type {
     margin-right: 0;
   }
-
 }
 
 .slick-dots button {
@@ -164,7 +156,7 @@
   
   border: none;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: $white;
 
   opacity: 0.5;
 
@@ -180,7 +172,6 @@
 }
 
 @media (max-width: 1100px) {
-
   .reviews__list {
     max-width: 815px;
   }
@@ -200,32 +191,25 @@
   .reviews__user-review {
     font-size: 16px;
   }
-
 }
 
-@media (max-width: 959px) {
-
+@media (max-width:  $desktop-max-width) {
  .reviews__list {
    max-width: 750px;
  }
-
 }
 
 @media (max-width: 893px) {
-
   .reviews__list {
     max-width: 650px;
   }
- 
  }
 
  @media (max-width: 794px) {
-
   .reviews__list {
     max-width: 85%;
   }
- 
- }
+}
 
  @media (max-width: 727px) {
 
@@ -241,19 +225,15 @@
   .slick-arrow {
     display: none;
   }
-
  }
 
 @media (max-width: 650px) {
-  
   .reviews__title {
     font-size: 32px;
   }
-
 }
 
 @media (max-width: 450px) {
-
   .reviews {
     padding-top: 50px;
     padding-bottom: 120px;
@@ -266,13 +246,10 @@
   .slick-dots {
     bottom: -70px;
   }
-
 }
 
 @media (max-width: 360px) {
-
   .reviews__item {
     min-height: 400px;
   }
-  
 }

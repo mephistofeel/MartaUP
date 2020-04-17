@@ -1,0 +1,20 @@
+$mobile-width: 320px;
+$desktop-width: 960px;
+$desktop-max-width: ($desktop-width - 1);
+
+$mine-shaft:  #272727;
+$mine-shaft--lighten: #202020;
+$white: #FFFFFF;
+$polar: #F4F9FD;
+$supernova: #FFCA00;
+$blue-gem: #250F8A;
+
+$bg-color-main: $white;
+
+$font-color-base: $mine-shaft;
+$font-color-base--lighten: $mine-shaft--lighten;
+$font-color-secondary: $white;
+
+$font-family-base: "Source Sans Pro", "Verdana", sans-serif;
+$font-size-base: 15px;
+$line-height-base: 24px;
