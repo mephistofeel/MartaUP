@@ -1,6 +1,4 @@
-# Проект "MartaUp"
-
-Вёрстка: [Игорь Пакшин](https://github.com/mephistofeel)
+# Проект «MartaUp»
 
 [Демо проекта](https://mephistofeel.github.io/martaup/index.html)
 
